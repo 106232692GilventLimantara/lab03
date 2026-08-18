@@ -23,19 +23,38 @@
     <fieldset>
         <legend>Student details</legend>
             <p><label for="studentid">Student ID</label> 
-			<input type="text" name= "studentid" id="studentid" maxlength="20" size="10" required="required"/>
+			<input type="text" name= "studentid" id="studentid" minlength="7" maxlength="10" pattern="[0-9]+" required="required"/>
 		    </p>
             
             <p>
             <label for="givenname">Given Name</label> 
-			<input type="text" name= "givenname" id="familyname" maxlength="20" size="10" required="required"/>
+			<input type="text" name= "givenname" id="familyname" pattern="[A-Za-z]+" maxlength="15" required="required"/>
 		    <label for="familyname">Family Name</label> 
-			<input type="text" name= "familyname" id="familyname" maxlength="20" size="10" required="required"/>
+			<input type="text" name= "familyname" id="familyname" pattern="[A-Za-z]+" maxlength="15" required="required"/>
 		    </p>
 
 
     </fieldset>
+    <fieldset>
+        <legend> Your unit</legend>
+            <p><input type="radio" id="COS10011" name="unitcode" value="COS10011" required>
+                <label for="COS10011">COS10011</label>
+				<input type="radio" id="COS60004" name="unitcode" value="COS60004">
+                <label for="COS60004">COS60004</label> 
+				<input type="radio" id="COS60007" name="unitcode" value="COS60007">
+                <label for="COS60007">COS60007</label>
+			</p>
 
+        <p><label for="tutor">Your Tutor</label> 
+			<select name="tutor" id="tutor">
+				<option value="placeholder">Please Select</option>
+                <option value="nick">Nick</option>			
+				<option value="feixueyan">Feixue Yan</option>
+				<option value="tuan">Tuan Dung Lai</option>
+				<option value="atie">Atie Kia</option>
+			</select>
+		</p>
+    </fieldset>
 
 
 
