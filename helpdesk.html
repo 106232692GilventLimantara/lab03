@@ -46,8 +46,8 @@
 			</p>
 
         <p><label for="tutor">Your Tutor</label> 
-			<select name="tutor" id="tutor">
-				<option value="placeholder">Please Select</option>
+			<select name="tutor" id="tutor" required>
+				<option value="">Please Select</option>
                 <option value="nick">Nick</option>			
 				<option value="feixueyan">Feixue Yan</option>
 				<option value="tuan">Tuan Dung Lai</option>
@@ -55,7 +55,37 @@
 			</select>
 		</p>
     </fieldset>
+    
 
+    <fieldset>
+        <legend>Issue</legend>
+            <p>
+                <label for="HTML">HTML</label> 
+			    <input type="checkbox" id="HTML" name="category[]" value="HTML" checked="checked"/>
+                
+                <label for="CSS">CSS</label> 
+				<input type="checkbox" id="CSS" name="category[]" value="CSS">
+
+                <label for="JavaScript">JavaScript</label> 
+				<input type="checkbox" id="JavaScript" name="category[]" value="JavaScript">
+                
+                <label for="PHP">PHP</label> 
+				<input type="checkbox" id="PHP" name="category[]" value="PHP">
+                
+                <label for="MySQL">MySQL</label> 
+				<input type="checkbox" id="MySQL" name="category[]" value="MySQL">
+			</p>
+
+
+            <p>
+                <label for="issue_description" style="display: block;">Description of Issue</label>
+                <textarea id="issue_description" name="issue description" rows="4" cols="40" placeholder="Write description of your problem here..."></textarea>
+            </p>
+
+
+
+
+    </fieldset>
 
 
 
